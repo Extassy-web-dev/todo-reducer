@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main {
+  width: 150vh;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+
+  .active {
+    text-decoration: line-through red 2px;
+    cursor: pointer;
+  }
+
+
+  .submit-btn {
+    width: 155px;
+    height: 42px;
+    border-radius: 10px;
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+
+  .submit-btn:hover {
+    color: #3498db;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+}
