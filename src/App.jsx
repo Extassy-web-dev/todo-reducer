@@ -78,13 +78,13 @@ function App() {
                 type="text"
                 name="title"
                 value={inp_value}
-                className='w-[321px] h-[42px] rounded-[10px] border-[#007FFF] border-[2px] border-solid outline-none p-[20px]'
+                className='w-[321px] h-[42px] rounded-[10px] border-[#007FFF] border-[2px] border-solid outline-none p-[20px] max-md:w-[200px]'
                 placeholder="Ведите..."
                 required />
-              <button type='submit' className='submit-btn'>Add</button>
+              <button type='submit' className='submit-btn w-[155px] max-md:w-[100px]'>Add</button>
             </form>
             <div className="line h-[1px] w-full  bg-black"></div>
-            <div className="box-todo grid grid-cols-3 gap-[20px] py-[20px]">
+            <div className="box-todo grid grid-cols-3 gap-[20px] py-[20px] max-sm:grid-cols-2 max-lg:grid-cols-2 max-w-full">
               {
                 todos.map(item => <TodoElem
                   key={item.id}

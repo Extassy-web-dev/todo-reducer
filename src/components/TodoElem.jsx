@@ -1,7 +1,7 @@
 function TodoElem({ item, deleteFunc, change, toggle }) {
 
     return (
-        <div className="todo-elem relative w-[300px] h-[105px] rounded-[10px] bg-[#f0f0f0] border-[1px] border-solid border-[#007FFF] p-[19px]  ">
+        <div className="todo-elem relative w-[300px] h-[105px] rounded-[10px] bg-[#f0f0f0] border-[1px] border-solid border-[#007FFF] p-[19px] max-w-full ">
             <img onClick={() => change(item?.id)}
                 src={"../../edit.png"}
                 className="absolute right-[45px] top-[16px] cursor-pointer hover:scale-[1.1] transition-all"
